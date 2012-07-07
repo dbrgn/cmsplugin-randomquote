@@ -10,6 +10,7 @@ setup(
     author_email = 'gezuru@gmail.com',
     url = 'http://github.com/gwrtheyrn/cmsplugin-randomquote',
     packages = find_packages(),
+    include_package_data=True,
     zip_safe=False,
     install_requires=[
         'django-cms>=2.1',
