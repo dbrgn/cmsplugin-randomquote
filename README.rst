@@ -16,3 +16,8 @@ Setup / Configuration
 
 - Add the plugin to a placeholder
 - Create some ``Quote`` Objects in the admin panel
+
+License
+-------
+
+`MIT <http://www.opensource.org/licenses/mit-license.html>`_, see LICENSE.txt
