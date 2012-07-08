@@ -7,7 +7,7 @@ from your database.
 Setup / Configuration
 ---------------------
 
-- Install this plugin
+- Install this plugin (``pip install cmsplugin-randomquote``)
 - Add ``cmsplugin_randomquote`` to your ``INSTALLED_APPS``
 - Run the schema migrations::
   
