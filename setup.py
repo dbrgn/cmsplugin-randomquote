@@ -9,6 +9,8 @@ setup(
     author = 'Danilo Bargen',
     author_email = 'gezuru@gmail.com',
     url = 'http://github.com/gwrtheyrn/cmsplugin-randomquote',
+    license='MIT',
+    keywords='django django-cms cms plugin quotes testimonials',
     packages = find_packages(),
     include_package_data=True,
     zip_safe=False,
