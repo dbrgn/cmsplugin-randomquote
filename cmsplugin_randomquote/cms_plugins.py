@@ -14,6 +14,7 @@ class QuotePlugin(CMSPluginBase):
             t_obj = Quote.objects.order_by('?')[0]
             context['quote'] = t_obj.quote_text
             context['author'] = t_obj.author
+            context['author_url'] = t_obj.author_url
         except IndexError:
             pass
 

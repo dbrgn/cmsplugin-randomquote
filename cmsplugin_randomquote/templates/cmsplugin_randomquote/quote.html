@@ -1,4 +1,6 @@
 <div class="quote">
     <blockquote>{{ quote }}</blockquote>
-    <p>{% if author %}&ndash; {{ author }}{% endif %}</p>
+    <p>{% if author %}&ndash;
+    {% if author_url %}<a href="{{ author_url }}">{{ author }}</a>{% else %}{{ author }}{% endif %}
+    {% endif %}</p>
 </div>
