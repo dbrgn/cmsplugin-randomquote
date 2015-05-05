@@ -1,7 +1,7 @@
 from django.utils.translation import ugettext_lazy as _
 from cms.plugin_base import CMSPluginBase
 from cms.plugin_pool import plugin_pool
-from models import Quote
+from .models import Quote
 
 
 class QuotePlugin(CMSPluginBase):
