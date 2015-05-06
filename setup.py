@@ -18,6 +18,6 @@ setup(
     zip_safe=False,
     install_requires=[
         'django-cms>=2.1',
-        'django>=1.2',
+        'django>=1.4.2',
     ]
 )

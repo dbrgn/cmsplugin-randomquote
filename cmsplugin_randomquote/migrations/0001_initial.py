@@ -1,32 +1,25 @@
 # -*- coding: utf-8 -*-
-from south.db import db
-from south.v2 import SchemaMigration
+from __future__ import unicode_literals
+
+from django.db import models, migrations
 
 
-class Migration(SchemaMigration):
+class Migration(migrations.Migration):
 
-    def forwards(self, orm):
-        # Adding model 'Quote'
-        db.create_table('cmsplugin_randomquote_quote', (
-            ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('quote_text', self.gf('django.db.models.fields.TextField')()),
-            ('author', self.gf('django.db.models.fields.CharField')(max_length=255)),
-        ))
-        db.send_create_signal('cmsplugin_randomquote', ['Quote'])
+    dependencies = [
+    ]
 
-
-    def backwards(self, orm):
-        # Deleting model 'Quote'
-        db.delete_table('cmsplugin_randomquote_quote')
-
-
-    models = {
-        'cmsplugin_randomquote.quote': {
-            'Meta': {'object_name': 'Quote'},
-            'author': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
-            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'quote_text': ('django.db.models.fields.TextField', [], {})
-        }
-    }
-
-    complete_apps = ['cmsplugin_randomquote']
+    operations = [
+        migrations.CreateModel(
+            name='Quote',
+            fields=[
+                ('id', models.AutoField(auto_created=True, serialize=False, verbose_name='ID', primary_key=True)),
+                ('quote_text', models.TextField(verbose_name='Quote Text')),
+                ('author', models.CharField(max_length=255, verbose_name='Author')),
+                ('author_url', models.URLField(default=None, null=True, blank=True, max_length=255, verbose_name='Author URL')),
+            ],
+            options={
+            },
+            bases=(models.Model,),
+        ),
+    ]
